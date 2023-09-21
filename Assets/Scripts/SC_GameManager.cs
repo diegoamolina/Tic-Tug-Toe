@@ -7,9 +7,9 @@ public class SC_GameManager : MonoBehaviour
     [SerializeField] GameObject circle;
     [SerializeField] GameObject ex;
 
-    [SerializeField] 
+    [SerializeField] Vector3 leftup;
     //[SerializeField] Transform parentTransform;
-
+/*
     void Update () 
     {
         if(Input.touchCount > 0)
@@ -24,9 +24,9 @@ public class SC_GameManager : MonoBehaviour
             }
         }
     }
-
-    Press()
+*/
+    void Press(Vector3 leftup)
     {
-        Instantiate(circle, touchPos, Quaternion.identity);
+        Instantiate(circle, leftup, Quaternion.identity);
     }
 }

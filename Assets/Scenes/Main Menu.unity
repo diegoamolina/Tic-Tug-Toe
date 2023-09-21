@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 3809986001910953144, guid: d114e286c8e680845847204ed9fd96d4, type: 3}
   ex: {fileID: 6662671091693187687, guid: 41a04dbf025161d4194c00b185ed9f99, type: 3}
+  leftup: {x: 0, y: 0, z: 0}
 --- !u!1 &75193094
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644126956}
   - component: {fileID: 644126957}
+  - component: {fileID: 644126958}
   m_Layer: 5
   m_Name: Fridge
   m_TagString: Untagged
@@ -793,6 +795,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &644126958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644126955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f914ba802a949184780f89577b8bbc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 3809986001910953144, guid: d114e286c8e680845847204ed9fd96d4, type: 3}
+  position: {x: -4.39, y: 107.23, z: 0}
 --- !u!1 &720616357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,7 +1573,7 @@ GameObject:
   - component: {fileID: 1733544244}
   - component: {fileID: 1733544243}
   - component: {fileID: 1733544242}
-  - component: {fileID: 1733544241}
+  - component: {fileID: 1733544245}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1585,19 +1601,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4.39, y: 107.23}
   m_SizeDelta: {x: 210, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1733544241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733544239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!114 &1733544242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1642,19 +1645,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10135504}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1733544239}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -1704,6 +1695,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733544239}
   m_CullTransparentMesh: 1
+--- !u!114 &1733544245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733544239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f914ba802a949184780f89577b8bbc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 3809986001910953144, guid: d114e286c8e680845847204ed9fd96d4, type: 3}
+  position: {x: -4.39, y: 107.23, z: 0}
 --- !u!1 &1814323037
 GameObject:
   m_ObjectHideFlags: 0
